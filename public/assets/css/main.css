@@ -1,0 +1,158 @@
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #333;
+}
+
+div.box {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin: 15px 0;
+  padding: 10px;
+  background-color: #fff;
+}
+div.small_box:hover {
+  background-color: #ddd;
+  cursor: pointer;
+}
+div.small_box {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin: 3px 0;
+  padding: 3px 5px;
+  background-color: #fff;
+}
+div.small_box.active {
+  color: #FFF;
+  background-color: #5bc0de;
+  border-color: #46b8da;
+}
+div.box.shade {
+  background-color: #eee;
+}
+div.box .header {
+  margin: -11px -11px 5px;
+  border: 1px solid #ddd;
+  border-radius: 4px 4px 0 0;
+  padding: 0 5px;
+}
+div.box .header h1, div.box .header h2,
+div.box .header h3, div.box .header h4 {
+  float: left;
+  display: inline-block;
+  margin-left: 6px;
+}
+div.box .header button {
+  padding: 5px;
+  margin-top: 10px;
+  margin-right: 6px;
+}
+
+div.box.smaller {
+  padding: 2px 15px;
+}
+div.box.smaller>div.header {
+  margin: -3px -16px 5px;
+  padding: 2px 15px;
+}
+div.box.hide>div.content {
+  display:none;
+}
+
+@media all and (max-width: 800px) {
+  div.col_50 {
+    width: 94%;
+  }
+}
+@media all and (min-width: 801px) {
+  div.col_50 {
+    width: 47%;
+  }
+  div.col_50.big_left {
+    float: left;
+  }
+  div.col_50.big_right {
+    float: right;
+  }
+}
+
+div.form_field .form_label {
+  display: inline-block;
+  text-align: left;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+div.form_field .form_input {
+  display: block;
+  width: 94%;
+  height: 34px;
+  padding: 0 12px;
+  font-size: 14px;
+  color: #555;
+  vertical-align: middle;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  margin-bottom: 5px;
+}
+div.form_field .form_input.error {
+  border: 2px solid #da4f49;
+  background-color: #FFAFAF;
+}
+
+div.form_buttons {
+  float: right;
+}
+
+.clear {
+  clear: both;
+}
+
+div.bottom {
+  margin-top: 15px;
+}
+
+div.password_display #password_display {
+  float: left;
+  display: inline;
+  width: 92%;
+}
+div.password_display button#select_pw {
+  float: right;
+  margin-top: 4px;
+}
+
+button {
+  display: inline-block;
+  padding: 3px 6px;
+  font-size: 14px;
+  text-align: center;
+  border-radius: 4px;
+  border: 1px solid #000;
+  cursor: pointer;
+}
+
+button.primary {
+  color: #FFF;
+  background-color: #428bca;
+  border-color: #357ebd;
+}
+
+button.info {
+  color: #FFF;
+  background-color: #5bc0de;
+  border-color: #46b8da;
+}
+
+button.warning {
+  color: #FFF;
+  background-color: #ed9c28;
+  border-color: #d58512;
+}
+
+button.error {
+  color: #FFF;
+  background-color: #da4f49;
+  border-color: #802420;
+}
